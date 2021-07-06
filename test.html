@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="content-style-type" content="text/css"/>
+  <meta http-equiv="content-style-type" content="text/javascript"/>
+  <meta http-equiv="imagetoolbar" content="no" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <link rel="stylesheet" href="../css/rookie_import.css" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="test.css"/>
+  <script type="./js/jquery-3.5.1.min"></script>
+  <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="../js/common.js"></script>
+
+  <script type="text/javascript">
+  $(function(){
+    $("#rookie_header").load("../common/header.html");
+    $("#footer").load("../common/footer.html");
+    $("#recruit_menu").load("../menu/recruit_menu.html");
+    $("#rookie_sub").load("../menu/recruit_sub.html");
+  })
+  </script>
+  <title>研修内容｜新入社員作成ページ</title>
+</head>
+<body>
+  <div id="top">
+    <div id="contents">
+      <div id="main">
+        <h2>研修内容</h2>
+        <h3>内部研修</h3>
+        <ul>
+          <li>ビジネスマナー研修</li>
+          社会人としての基礎的な能力を養うための研修。
+          主に文書作成術や、社会人としてのマナー、タイムマネジメントなどについて学ぶ。
+          <li>セキュリティ教育</li>
+          情報機器の使い方、情報管理など、情報セキュリティについて学ぶ。
+        </ul>
+
+        <div onclick="obj=document.getElementById('title').style; obj.display=(obj.display=='none')?'block':'none';">
+
+          <h3 style="cursor:pointer;">外部研修</h3>
+        </div>
+        <div id="title" style="display:none;clear:both;">
+          <ul>
+            <li>アルゴリズム</li>
+            アルゴリズムの概要を学び、チームに分かれて演習を行う。
+            <li>IT基礎</li>
+            基本的なIT知識について学び、疑問点などの確認をグループディスカッションを通じて行う。
+            <li>Linux</li>
+            OSの一種であるLinuxの概要と簡単なコマンド操作を学ぶ。
+            <li>Git</li>
+            バージョン管理ツールであるGitの概要とGitLabの操作を学ぶ。
+          </ul>
+
+          <div onclick="obj=document.getElementById('open1').style; obj.display=(obj.display=='none')?'block':'none';">
+            <a style="cursor:pointer;">クライアントサイド</a>
+          </div>
+          <div id="open1" style="display:none;clear:both;">
+            <ul>
+              <li>HTML/CSS</li>
+              概要を学び、自己紹介ページを作成。HTML/CSSを学ぶことで、Webページの表示ができるようになる。
+              <li>JavaScript</li>
+              JavaScriptの文法と書き方を学ぶ。JavaScriptを使用することで、Webページに動きをつけることができるようになる。
+              <li>React/Material-UI</li>
+              <li>SPA開発演習</li>
+              クライアントサイドで学んだことを活用して、簡易的なWebアプリケーションの開発（SNS、投票サイトなど）を行う。
+            </ul>
+          </div>
+
+          <div onclick="obj=document.getElementById('open2').style; obj.display=(obj.display=='none')?'block':'none';">
+            <a style="cursor:pointer;">サーバーサイド</a>
+          </div>
+          <div id="open2" style="display:none;clear:both;">
+            <ul>
+              <li>Java</li>
+              Javaの文法と書き方を学ぶ。Javaを学ぶことで、サーバサイドの構築ができるようになる。
+              <li>データベース</li>
+              データベースの概要を学び、MySQLを使用してデータベースを構築する。
+              <li>Spring Boot</li>
+              Spring Bootの概要を学び、データベースアクセスの演習を行う。
+              <li>SPA+REST開発演習</li>
+              Webアプリケーションのサーバ―サイドの開発演習を行う。
+            </ul>
+          </div>
+
+          <div onclick="obj=document.getElementById('open3').style; obj.display=(obj.display=='none')?'block':'none';">
+            <a style="cursor:pointer;">システム構築演習</a>
+          </div>
+          <div id="open3" style="display:none;clear:both;">
+            <ul>
+              <li>詳細設計</li>
+              システムのデータベースやデータベースとのやり取りについて設計を行う。
+              <li>テスト設計</li>
+              システムに想定されるバグを予測し、テスト項目を洗い出す。
+              <li>実装・単体テスト</li>
+              設計書を基に、プログラミングを行う。プログラミングしたものは、動作確認を行う。
+              <li>テスト</li>
+              テスト設計書を基にテストを行い、見つかったバグを修正する。
+            </ul>
+          </div>
+
+
+      </div><!---main--->
+    </div><!---contents--->
+
+  </div><!---id--->
+
+
+</body>
+</html>
